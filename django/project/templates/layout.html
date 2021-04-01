@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block layout %}
+<div class="container-scroller">
+  {% block navbar %}
+    {% include 'navbar.html' %}
+  {% endblock navbar %}
+
+  <div class="container-fluid page-body-wrapper">
+    {% block sidebar %}
+      {% include 'sidebar.html' %}
+    {% endblock sidebar %}
+    <div class="main-panel">
+      <div class="content-wrapper">
+        {% block content %}{% endblock content %}
+      </div>
+      {% block footer %}
+        {% include 'footer.html' %}
+      {% endblock footer %}
+    </div>
+  </div>
+</div>
+{% endblock layout %}

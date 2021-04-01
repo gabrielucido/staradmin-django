@@ -1,0 +1,62 @@
+### GPA Web EOS ###
+
+django/HASH
+django/SECRET
+django/logs/
+django/webeos/public/
+
+
+### Git ###
+
+!.gitkeep
+
+
+### Python ###
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Unit test / coverage / profiling reports
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+*.py,cover
+.prof
+.cache
+
+# Translations
+*.mo
+*.pot
+
+# Django
+*.sqlite3
+*.log
+
+# PyEnv
+.python-version
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# MyPy
+.mypy_cache/
+
+
+### Editors ###
+
+.vscode
+.idea
+*.code-workspace
+*.sublime-workspace
+*.sublime-project
+
+### Mac/OSX ###
+
+.DS_Store

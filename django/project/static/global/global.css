@@ -1,0 +1,17 @@
+.language-flag-wrapper {
+  width: 32px;
+}
+
+.z-1 {
+  z-index: 1;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.btn-no-outline:focus,
+.btn-no-outline:active {
+  outline: none !important;
+  box-shadow: none;
+}

@@ -1,0 +1,15 @@
+FROM python:3.9.2
+
+ARG MODE
+
+RUN mkdir -p "/app/django/"
+WORKDIR "/app/django/"
+ADD . "/app/django/"
+
+RUN ["chmod", "+x", "/app/django/docker/build.sh"]
+RUN ["/app/django/docker/build.sh"]
+
+EXPOSE 80
+
+RUN ["chmod", "+x", "/app/django/docker/entrypoint.sh"]
+RUN ["/app/django/docker/entrypoint.sh"]

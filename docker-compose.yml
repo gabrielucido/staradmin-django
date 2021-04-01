@@ -1,0 +1,9 @@
+version: "3.7"
+
+services:
+  django:
+    build:
+      context: ./django/
+    restart: always
+    volumes:
+      - ./django/:/app/django/
