@@ -1,4 +1,4 @@
-# Django Staradmin bootstrap template
+# Django Staradmin
 
 ## Run with
 
